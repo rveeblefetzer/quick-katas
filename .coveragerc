@@ -1,0 +1,10 @@
+[run]
+source = quick_katas
+omit =
+    quick_katas/tests*
+    quick_katas/__init__.py
+
+[report]
+show_missing = True
+
+
