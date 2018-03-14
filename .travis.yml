@@ -9,5 +9,4 @@ python:
 
 # command to run tests
 script:
-    - py.test quick_katas/tests/test_kata_1.py
-    - py.test quick_katas/tests/test_kata_2.py
+    - tox
