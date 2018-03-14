@@ -5,8 +5,8 @@ python:
     - "3.6"
 
 # command to install dependencies
-    - pip install tox
+    - pip install pytest pytest-cov tox
 
 # command to run tests
 script:
-    - tox
+    - py.test quick_katas/tests
