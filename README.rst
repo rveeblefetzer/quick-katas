@@ -26,7 +26,7 @@ include whitelist or blacklist info, or sent to ``._asdict()`` and extended to i
 number of connections.
 
 If I were to create an issue for this, it'd be to cover non-addresses, such as octets that go past eight bits.
-But instead of going forth with this, there's a really nice solution in the ``_is_private_ip()`` function from the Cuckoo Sandbox `here https://github.com/cuckoosandbox/cuckoo/blob/master/cuckoo/processing/network.py>`_, using the struct
+But instead of going forth with this, there's a really nice solution in the ``_is_private_ip()`` function from Cuckoo Sandbox `here <https://github.com/cuckoosandbox/cuckoo/blob/master/cuckoo/processing/network.py>`_, using the struct
 and socket libraries. Struct, which does conversions between Python values and C structs, was new to me, but is
 absolutely suited for the problem. And, `the docs for it <https://docs.python.org/2/library/struct.html>`_ has this gem:
 	The form '!' is available for those poor souls who claim they can’t remember whether network byte order is big-endian or little-endian.
